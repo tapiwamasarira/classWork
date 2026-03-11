@@ -9,6 +9,14 @@ public class Gr4MoreMethods {
       
       Animal cow = new Animal("Martin", 6, "Dairy", "Brown");
       cow.printAnimalDetails();
+      
+      Animal dog = new Animal("Bobby",2,"pitbull","midnight black");
+      dog.printAnimalDetails();
+      dog.setAnimalName("Sprite");
+      System.out.println(dog.getAnimalName());
+     
+      
+      
         
         
       printWelcomeMessage();
@@ -31,4 +39,5 @@ public class Gr4MoreMethods {
                   System.out.println("-----Welcome to PROG5121 session-----");
               }
      
+ 
 }
