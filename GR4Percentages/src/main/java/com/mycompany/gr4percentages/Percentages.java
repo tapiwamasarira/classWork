@@ -9,7 +9,7 @@ public class Percentages {
     public void bookStoreCredit (String name, double gpa){
         double creditAmount = gpa * 10;
         
-        System.out.println("Congratulations " + name + "! for your GPA: " + gpa + 
+        System.out.println("Congratulations " + name + "! for your GPA of: " + gpa + 
                 " your bookstore credit is $" + creditAmount);
     }
 }
