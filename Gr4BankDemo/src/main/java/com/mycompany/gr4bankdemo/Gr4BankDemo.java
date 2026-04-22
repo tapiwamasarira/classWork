@@ -5,6 +5,14 @@ public class Gr4BankDemo {
     public static void main(String[] args) {
         Scanner inputObject = new Scanner(System.in);
         
+        System.out.println("Enter age: ");
+        int age = inputObject.nextInt();
+        canVote(age);
+        System.out.println("Enter mark: ");
+        double mark = inputObject.nextDouble();
+        youPass(mark);
+        
+       
         BankAccount user1 = new BankAccount("Chandler Bing",50);
         System.out.println("You must select:\n1 to Deposit \n2 to Withdraw \n3 for Balance ");
         
@@ -31,5 +39,14 @@ public class Gr4BankDemo {
                 System.out.println("INVALID SELECTION");
                 break;
         }
+        
+    }
+    public static void canVote(int age){
+        String canIVote = age > 18? "User can Vote":"Not old enough";
+        System.out.println(canIVote);
+    }
+    public static void youPass(double mark){
+        String didYou = mark >= 50? "You Passed":"Maybe take your school work seriously next year";
+        System.out.println(didYou);
     }
 }
